@@ -1,0 +1,11 @@
+body{
+    overflow-y: auto;
+}
+
+#mainContainer{
+    width: 1028px !important;
+}
+
+.drop{
+    filter: drop-shadow(0 0 5px rgba(255,255,255,.6));
+}

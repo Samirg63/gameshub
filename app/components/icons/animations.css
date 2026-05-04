@@ -1,0 +1,80 @@
+.xLeft,.xRight,.line{
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+
+.circle{
+    fill: none;
+  stroke: #c10007; 
+  stroke-width: 15;
+
+  
+  stroke-dasharray: 314; 
+  stroke-dashoffset: 314;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+  
+}
+
+.coin{
+    animation-fill-mode:forwards ;
+    animation-duration: 1.6s;
+    animation-timing-function: cubic-bezier(0.6, 0.8, 0.2, 1);
+}
+
+@keyframes drawCircle{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes XFadeLeft{
+    from{
+        left:130%;
+        top:-30%;
+    }
+    to{
+        left:50%;
+        top:50%;
+    }
+}
+
+@keyframes XFadeRight{
+    0%{
+        left:-30%;
+        top:-30%;
+    }
+    100%{
+        left:50%;
+        top:50%;
+    }
+}
+
+@keyframes FadeLine{
+    0%{
+        left:-40%;
+        top:-40%;
+    }
+    100%{
+        left:50%;
+        top:50%;
+    }
+}
+
+@keyframes flipCoin {
+        0%{
+            bottom: 10%;
+        }
+        20%{
+            bottom: 0;
+            transform: rotateX(-60deg);
+        }
+        50%{
+            bottom: 110%;
+            transform: rotateX(1080deg);
+        }
+        100%{
+            bottom:10%;
+            transform: rotateX(2160deg);
+        }
+}
